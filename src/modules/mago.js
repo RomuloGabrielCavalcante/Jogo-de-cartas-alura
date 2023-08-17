@@ -6,8 +6,8 @@ export class Mago extends Personagem{
     inteligencia
     static tipo = 'Mago'
     static descricao = 'O mago é implacável!'
-    constructor(nome, level,elemntoMagico, levelMagico, inteligencia){
-        super(nome, level)
+    constructor(nome,elemntoMagico, levelMagico, inteligencia){
+        super(nome)
         this.elemntoMagico = elemntoMagico
         this.levelMagico = levelMagico
         this.inteligencia = inteligencia
@@ -15,7 +15,7 @@ export class Mago extends Personagem{
 
     obterInsignia(){
         if(this.levelMagico >=5 && this.inteligencia >=5){
-            return`Mestre ${this.elemntoMagico}`
+            return `Mestre Mago`
         }
         return super.obterInsignia()
     }

@@ -12,7 +12,7 @@ botaoFechar.addEventListener('click', removerModal);
 fundo.addEventListener('click', removerModal);
 
 export const mostrarModal = (mensagem = '') => {
-    mensagemModal.innerText = mensagem;sdds
+    mensagemModal.innerText = mensagem;
     modal.classList.add('visivel');
     fundo.classList.add('visivel');
 }
